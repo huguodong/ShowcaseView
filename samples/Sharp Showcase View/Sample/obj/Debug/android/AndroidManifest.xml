@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.1" package="Sample.Sample" android:versionCode="2">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="11" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="Sample" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="SharpShowcaseView" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.SampleActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Sample" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.MultipleShowcaseSampleActivity" />
+    <activity android:label="MemoryTesting" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.MemoryManagementTesting" />
+    <activity android:label="AnimationSampleActivity" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.AnimationSampleActivity" />
+    <activity android:label="ShowcaseFragmentActivity" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.ShowcaseFragmentActivity" />
+    <activity android:label="ActionItemSampleActivity" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.ActionItemsSampleActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Sample.Sample.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Sample.Sample" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

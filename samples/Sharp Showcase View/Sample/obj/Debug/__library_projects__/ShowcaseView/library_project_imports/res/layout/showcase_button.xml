@@ -1,0 +1,1 @@
+<Button style="@style/ShowcaseButton" android:text="@string/ok" android:id="@id/showcase_button" xmlns:android="http://schemas.android.com/apk/res/android" />

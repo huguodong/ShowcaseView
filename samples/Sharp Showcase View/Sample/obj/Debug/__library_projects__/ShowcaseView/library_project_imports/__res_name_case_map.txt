@@ -1,0 +1,12 @@
+values/Strings.xml;values/strings.xml
+values/styles.xml;values/styles.xml
+values/ids.xml;values/ids.xml
+values/attr.xml;values/attr.xml
+layout/showcase_button.axml;layout/showcase_button.xml
+layout/handy.axml;layout/handy.xml
+drawable-xhdpi/btn_cling_normal.9.png;drawable-xhdpi/btn_cling_normal.9.png
+drawable-xhdpi/btn_cling_pressed.9.png;drawable-xhdpi/btn_cling_pressed.9.png
+drawable-xhdpi/cling_bleached.png;drawable-xhdpi/cling_bleached.png
+drawable-xhdpi/cling.png;drawable-xhdpi/cling.png
+drawable-xhdpi/hand.png;drawable-xhdpi/hand.png
+drawable/cling_button_bg.xml;drawable/cling_button_bg.xml

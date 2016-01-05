@@ -1,0 +1,1 @@
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><fragment android:layout_width="fill_parent" android:layout_height="fill_parent" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.ShowcaseFragment" android:id="@+id/fragment" /></FrameLayout>

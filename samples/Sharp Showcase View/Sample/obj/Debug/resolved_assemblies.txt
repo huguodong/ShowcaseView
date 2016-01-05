@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\Sample.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\Mono.Android.Export.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\ShowcaseView.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\System.Core.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\System.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\Administrator\Desktop\ShowcaseView-1.1\samples\Sharp Showcase View\Sample\obj\Debug\assemblies\System.ServiceModel.Internals.dll
