@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShowcaseView</name>
+    </assembly>
+    <members>
+        <member name="M:SharpShowcaseView.ShowcaseViews.AddAnimatedGestureToView(System.Int32,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Add an animated gesture to the view at position viewIndex
+            </summary>
+            <param name="viewIndex">The position of the view the gesture should be added to.</param>
+            <param name="offsetStartX">X-coordinate or x-offset of the start position</param>
+            <param name="offsetStartY">Y-coordinate or y-offset of the start position</param>
+            <param name="offsetEndX">X-coordinate or x-offset of the end position.</param>
+            <param name="offsetEndY">Y-coordinate or y-offset of the end position.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseViews.AddAnimatedGestureToView(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Add an animated gesture to the view at position viewIndex
+            </summary>
+            <param name="viewIndex">The position of the view the gesture should be added to.</param>
+            <param name="startX">X-coordinate or x-offset of the start position</param>
+            <param name="startY">Y-coordinate or y-offset of the start position</param>
+            <param name="endX">X-coordinate or x-offset of the end position.</param>
+            <param name="endY">Y-coordinate or y-offset of the end position.</param>
+            <param name="absoluteCoordinates">If set to <c>true</c>, this will use absolute coordinates instead of coordinates relative to the center of the showcased view.</param>
+        </member>
+        <member name="T:SharpShowcaseView.ShowcaseView">
+            <summary>
+            A view which allows you to showcase areas of your app with an explanation.
+            </summary>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.SetShowcaseView(Android.Views.View)">
+            <summary>
+            Sets the showcase view.
+            </summary>
+            <param name="view">The View to showcase.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.SetShowcasePosition(System.Int32,System.Int32)">
+            <summary>
+            Set a specific position to showcase
+            </summary>
+            <param name="x">The x coordinate.</param>
+            <param name="y">The y coordinate.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.GetLegacyOverflowPoint">
+            <summary>
+            Gets the bottom centre of the screen, where a legacy menu would pop up.
+            </summary>
+            <returns>The legacy overflow point.</returns>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.OverrideButtonClick(Android.Views.View.IOnClickListener)">
+            <summary>
+            Override the standard button click event.
+            </summary>
+            <param name="listener">Listener to listen to on click events.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.OverrideButtonClick(System.EventHandler)">
+            <summary>
+            Override the standard button click event.
+            </summary>
+            <param name="handler">The click handler.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.AnimateGesture(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Adds an animated hand performing a gesture.
+            All parameters passed to this method are relative to the center of the showcased view.
+            </summary>
+            <param name="offsetStartX">X-offset of the start position.</param>
+            <param name="offsetStartY">Y-offset of the start position.</param>
+            <param name="offsetEndX">X-offset of the end position.</param>
+            <param name="offsetEndY">Y-offset of the end position.</param>
+            <see cref="M:SharpShowcaseView.ShowcaseView.AnimateGesture(System.Single,System.Single,System.Single,System.Single,System.Boolean)" />
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.AnimateGesture(System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Adds an animated hand performing a gesture.
+            </summary>
+            <param name="startX">X-coordinate or x-offset of the start position.</param>
+            <param name="startY">Y-coordinate or x-offset of the start position.</param>
+            <param name="endX">X-coordinate or x-offset of the end positio.</param>
+            <param name="endY">Y-coordinate or x-offset of the end position.</param>
+            <param name="absoluteCoordinates">If set to <c>true</c> this will use absolute coordinates instead of coordinates relative to the center of the showcased view.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.GetHand">
+            <summary>
+            Get the ghostly gesture hand for custom gestures.
+            </summary>
+            <returns>A View representing the ghostly hand.</returns>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.PointTo(Android.Views.View)">
+            <summary>
+            Point to a specific view.
+            </summary>
+            <param name="view">The view to showcase.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.PointTo(System.Single,System.Single)">
+            <summary>
+            Point to a specific point on the screen.
+            </summary>
+            <param name="x">The x coordinate to point to.</param>
+            <param name="y">The y coordinate to point to.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.PointTo(SharpShowcaseView.Targets.ITarget)">
+            <summary>
+            Point to a specific point on the screen.
+            </summary>
+            <param name="target">The target to point to.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.InsertShowcaseView(Android.Views.View,Android.App.Activity,System.String,System.String,SharpShowcaseView.ShowcaseView.ConfigOptions)">
+            <summary>
+            Quick method to insert a ShowcaseView into an Activity
+            </summary>
+            <returns>The created ShowcaseView instance.</returns>
+            <param name="viewToShowcase">View to showcase.</param>
+            <param name="activity">Activity to insert into.</param>
+            <param name="title">Text to show as a title. Can be null..</param>
+            <param name="detailText">More detailed text. Can be null.</param>
+            <param name="options">A set of options to customise the ShowcaseView.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.InsertShowcaseView(Android.Views.View,Android.App.Activity,System.Int32,System.Int32,SharpShowcaseView.ShowcaseView.ConfigOptions)">
+            <summary>
+            Quick method to insert a ShowcaseView into an Activity.
+            </summary>
+            <returns>The created ShowcaseView instance.</returns>
+            <param name="viewToShowcase">View to showcase.</param>
+            <param name="activity">Activity to insert into.</param>
+            <param name="title">Text to show as a title. Can be null.</param>
+            <param name="detailText">More detailed text. Can be null.</param>
+            <param name="options">A set of options to customise the ShowcaseView.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.InsertShowcaseViewWithType(System.Int32,System.Int32,Android.App.Activity,System.String,System.String,SharpShowcaseView.ShowcaseView.ConfigOptions)">
+            <summary>
+            Quickly insert a ShowcaseView into an Activity, highlighting an item.
+            </summary>
+            <returns>The showcase view with type.</returns>
+            <param name="type">The type of item to showcase (can be ITEM_ACTION_HOME, ITEM_TITLE_OR_SPINNER, ITEM_ACTION_ITEM or ITEM_ACTION_OVERFLOW).</param>
+            <param name="itemId">The ID of an Action item to showcase (only required for ITEM_ACTION_ITEM).</param>
+            <param name="activity">Activity to insert the ShowcaseView into.</param>
+            <param name="title">Text to show as a title. Can be null.</param>
+            <param name="detailText">More detailed text. Can be null.</param>
+            <param name="options">A set of options to customise the ShowcaseView.</param>
+        </member>
+        <member name="M:SharpShowcaseView.ShowcaseView.InsertShowcaseViewWithType(System.Int32,System.Int32,Android.App.Activity,System.Int32,System.Int32,SharpShowcaseView.ShowcaseView.ConfigOptions)">
+            <summary>
+            Quickly insert a ShowcaseView into an Activity, highlighting an item.
+            </summary>
+            <returns>The showcase view with type.</returns>
+            <param name="type">The type of item to showcase (can be ITEM_ACTION_HOME, ITEM_TITLE_OR_SPINNER, ITEM_ACTION_ITEM or ITEM_ACTION_OVERFLOW).</param>
+            <param name="itemId">The ID of an Action item to showcase (only required for ITEM_ACTION_ITEM).</param>
+            <param name="activity">Activity to insert the ShowcaseView into.</param>
+            <param name="title">Text to show as a title. Can be null.</param>
+            <param name="detailText">More detailed text. Can be null.</param>
+            <param name="options">A set of options to customise the ShowcaseView.</param>
+        </member>
+        <member name="F:SharpShowcaseView.ShowcaseView.ConfigOptions.Insert">
+            <summary>
+            Does not work with the {@link ShowcaseViews} class as it does not make sense (only with {@link ShowcaseView}).
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.ShowcaseId">
+            <summary>
+            If you want to use more than one Showcase with the IsOneShot = true
+            in one Activity, set a unique value for every different Showcase you want to use.
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.IsOneShot">
+            <summary>
+            If you want to use more than one Showcase with IsOneShot = true in one
+            Activity, set a unique ShowcaseId value for every different
+            Showcase you want to use. If you want to use this in the ShowcaseViews class, you
+            need to set a custom ShowcaseId for each ShowcaseView.
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.FadeInDuration">
+            <summary>
+            Default duration for fade in animation. Set to 0 to disable.
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.FadeOutDuration">
+            <summary>
+            Default duration for fade out animation. Set to 0 to disable.
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.ButtonLayoutParams">
+            <summary>
+            Allow custom positioning of the button within the showcase view.
+            </summary>
+        </member>
+        <member name="P:SharpShowcaseView.ShowcaseView.ConfigOptions.CenterText">
+            <summary>
+            Whether the text should be centered or stretched in the available space.
+            </summary>
+        </member>
+        <member name="T:SharpShowcaseView.NoneOnShowcaseEventListener">
+            <summary>
+            Empty implementation of IOnShowcaseViewEventListener such that null checks aren't needed
+            </summary>
+        </member>
+        <member name="T:SharpShowcaseView.Utils.Calculator">
+            <summary>
+            Calculates various items for use with ShowcaseView.
+            </summary>
+        </member>
+        <member name="T:SharpShowcaseView.Utils.IShowcaseAreaCalculator">
+            <summary>
+            Responsible for calculating where the Showcase should position itself
+            </summary>
+        </member>
+        <member name="M:SharpShowcaseView.Drawing.ClingDrawer.CalculateShowcaseRect(System.Single,System.Single)">
+                 * Creates a {@link android.graphics.Rect} which represents the area the showcase covers. Used
+                 * to calculate where best to place the text
+                 *
+                 * @return true if voidedArea has changed, false otherwise.</member>
+        <member name="M:SharpShowcaseView.Drawing.TextDrawer.CalculateTextPosition(System.Int32,System.Int32,SharpShowcaseView.ShowcaseView)">
+                 * Calculates the best place to position text
+                 *
+                 * @param canvasW width of the screen
+                 * @param canvasH height of the screen</member>
+        <member name="T:SharpShowcaseView.Actionbar.ActionBarViewWrapper">
+            <summary>
+            Class which wraps round the many implementations of ActionBarView and allows finding of Action items.
+            </summary>
+        </member>
+        <member name="M:SharpShowcaseView.Actionbar.ActionBarViewWrapper.GetSpinnerView">
+            <summary>
+            Gets the spinner view.
+            </summary>
+            <returns>Return the view which represents the spinner on the ActionBar, or null if there isn't one.</returns>
+        </member>
+        <member name="M:SharpShowcaseView.Actionbar.ActionBarViewWrapper.GetTitleView">
+            <summary>
+            Gets the title view.
+            </summary>
+            <returns>Return the view which represents the title on the ActionBar, or null if there isn't one.</returns>
+        </member>
+        <member name="M:SharpShowcaseView.Actionbar.ActionBarViewWrapper.GetOverflowView">
+            <summary>
+            Gets the overflow view.
+            </summary>
+            <returns>Return the view which represents the overflow action item on the ActionBar, or null if there isn't one.</returns>
+        </member>
+        <member name="T:SharpShowcaseView.Actionbar.Reflection.BaseReflector">
+            <summary>
+            Base class which uses reflection to determine how to showcase Action Items and Action Views.
+            </summary>
+        </member>
+        <member name="T:SharpShowcaseView.Actionbar.Reflection.ActionBarReflector">
+            <summary>
+            Reflector which finds action items in the standard API 11 ActionBar implementation.
+            </summary>
+        </member>
+    </members>
+</doc>
